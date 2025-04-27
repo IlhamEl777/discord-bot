@@ -183,8 +183,7 @@ async function editData() {
                         console.log("✅ Chat berhasil ditambahkan!");
 
                         // Setelah sukses tambah, langsung tanya mau tambah lagi
-                        const addMore = readlineSync.keyInYN('[+] Mau tambah chat lagi?');
-                        tambahChatLagi = addMore; // kalau Y lanjut, kalau N berhenti
+                        tambahChatLagi = readlineSync.keyInYN('[+] Mau tambah chat lagi?'); // kalau Y lanjut, kalau N berhenti
                     } else {
                         console.log("⚠️ Pesan tidak boleh kosong!");
                     }
